@@ -2249,11 +2249,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3810613709646297842, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.681116
+      value: -5.08
       objectReference: {fileID: 0}
     - target: {fileID: 3810613709646297842, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5529919
+      value: -2.37
       objectReference: {fileID: 0}
     - target: {fileID: 3810613709646297842, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2628,63 +2628,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &929408988
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.4147205
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.1321468
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043655035827330370, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7631757783775385602, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
-      propertyPath: m_Name
-      value: AxolotBlue
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2c1b6408434e77e4e803561c7578f0f5, type: 3}
 --- !u!1 &1505049151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,8 +2699,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1202384881
-  m_SortingLayer: 2
+  m_SortingLayerID: 512054423
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -8003,4 +7946,3 @@ SceneRoots:
   - {fileID: 465585145}
   - {fileID: 390926128}
   - {fileID: 462328525}
-  - {fileID: 929408988}
