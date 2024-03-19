@@ -33,7 +33,9 @@ public class FSM_State
             bool value = Transitions[i].Decision.Decide();
 
             if(value)
+            {
                 brain.ChangeState(Transitions[i].TrueState);
+            }
 
             else
                 brain.ChangeState(Transitions[i].FalseState);
