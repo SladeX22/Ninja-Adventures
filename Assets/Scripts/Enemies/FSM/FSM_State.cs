@@ -32,13 +32,16 @@ public class FSM_State
         {
             bool value = Transitions[i].Decision.Decide();
 
-            if(value)
+            if (value)
             {
-                brain.ChangeState(Transitions[i].TrueState);
+                if(Transitions[i].TrueState != EnemyState.NONE)
+                    brain.ChangeState(Transitions[i].TrueState);
             }
-
             else
-                brain.ChangeState(Transitions[i].FalseState);
+            {
+                if(Transitions[i].FalseState != EnemyState.NONE)
+                    brain.ChangeState(Transitions[i].FalseState);
+            }
         }
     }
 }

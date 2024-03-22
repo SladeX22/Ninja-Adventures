@@ -31,6 +31,7 @@ public class WaypointEditor : Editor
             text.normal.textColor = Color.black;
             Vector3 textPos = new Vector3(0.2f, -0.2f);
 
+
             if(EditorGUI.EndChangeCheck())
             {
                 Undo.RecordObject(target, "Free Move");
