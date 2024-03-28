@@ -14,11 +14,11 @@ public class PlayerMana : MonoBehaviour
         }
     }
 
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             useMana(5);
         }
-    }
+    }*/
 }
