@@ -11,6 +11,7 @@ public class PlayerAttack : MonoBehaviour
     float currentAttackRotation;
 
     PlayerMovement playerMovement;
+    PlayerMana playerMana;
     PlayerActions actions;
     PlayerAnimation playerAnim;
     EnemyBrain target;
@@ -21,6 +22,7 @@ public class PlayerAttack : MonoBehaviour
         actions = new PlayerActions();
         playerAnim = GetComponent<PlayerAnimation>();
         playerMovement = GetComponent<PlayerMovement>();
+        playerMana = GetComponent<PlayerMana>();
     }
 
     private void Start()
