@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    [SerializeField] Weapon initialWeapon;
+    [SerializeField] Transform[] attackPositions;
+    
+    Transform currentAttackPosition;
+    float currentAttackRotation;
+
+    PlayerMovement playerMovement;
     PlayerActions actions;
     PlayerAnimation playerAnim;
     EnemyBrain target;
@@ -13,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
     {
         actions = new PlayerActions();
         playerAnim = GetComponent<PlayerAnimation>();
-        
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Start()
@@ -21,6 +28,11 @@ public class PlayerAttack : MonoBehaviour
         actions.Attack.ClickAttack.performed += ctx => Attack();
         SelectionManager.OnEnemySelected += SetCurrentTarget;
         SelectionManager.OnNoSelection += ResetCurrentTarget;
+    }
+
+    private void Update()
+    {
+        GetFirePosition();
     }
 
     void Attack()
@@ -35,10 +47,45 @@ public class PlayerAttack : MonoBehaviour
 
     IEnumerator AttackCo()
     {
-        print("Attacking");
+        if(currentAttackPosition == null)
+            yield break;
+
+        Quaternion rotation = Quaternion.Euler(new Vector3(0f, 0f, currentAttackRotation));
+        Projectile projectile = Instantiate(initialWeapon.ProjectilePrefab, currentAttackPosition.position, rotation);
+
+        projectile.Direction = Vector3.up;
+
+
         playerAnim.setAttackingAnimation(true);
         yield return new WaitForSeconds(0.5f);
         playerAnim.setAttackingAnimation(false);
+    }
+
+    void GetFirePosition()
+    {
+        Vector2 moveDirection = playerMovement.MoveDirection;
+
+        if (moveDirection.x > 0f)
+        {
+            currentAttackPosition = attackPositions[1]; //right
+            currentAttackRotation = -90f;
+        }
+        else if (moveDirection.x < 0f)
+        {
+            currentAttackPosition = attackPositions[3]; //left
+            currentAttackRotation = -270f;
+        }
+
+        if (moveDirection.y > 0f)
+        {
+            currentAttackPosition = attackPositions[0]; //up
+            currentAttackRotation = 0f;
+        }
+        else if (moveDirection.y < 0f)
+        {
+            currentAttackPosition = attackPositions[2]; //down
+            currentAttackRotation = -180f;
+        }
     }
 
 

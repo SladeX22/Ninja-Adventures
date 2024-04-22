@@ -207,7 +207,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 030cf2d830a8b0f45bc7981332ec55d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44455,6 +44455,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029e0d5ce7e589548819f5128cbed6a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialWeapon: {fileID: 11400000, guid: 5aaee3ec9283f514d8698e240354c49d, type: 2}
+  attackPositions:
+  - {fileID: 45983512}
+  - {fileID: 158332084}
+  - {fileID: 1605412859}
+  - {fileID: 1693239142}
 --- !u!1 &466557699
 GameObject:
   m_ObjectHideFlags: 0
