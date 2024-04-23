@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,13 +6,22 @@ using UnityEngine;
 public class PlayerMana : MonoBehaviour
 {
     [SerializeField] PlayerStats playerStats;
-    
-    public void useMana(float amount)
+    public float CurrentMana { get; private set; }
+
+    private void Start()
     {
-        if(playerStats.CurrentMana >= amount)
-        {
-            playerStats.CurrentMana -= amount;
-        }
+        ResetMana();
+    }
+
+    public void ResetMana()
+    {
+        CurrentMana = playerStats.MaxMana;
+    }
+
+    public void UseMana(float amount)
+    {
+        playerStats.CurrentMana = Mathf.Max(playerStats.CurrentMana -= amount, 0f);
+        CurrentMana = playerStats.CurrentMana;
     }
 
     /*void Update()
