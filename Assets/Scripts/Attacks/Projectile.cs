@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
 
     public Vector3 Direction { get; set; }
 
+    public float Damage { get; set; }
+
 
     void Update()
     {
@@ -16,6 +18,7 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        other.GetComponent<IDamagable>()?.TakeDamage(Damage);
         Destroy(this.gameObject);
     }
 }
