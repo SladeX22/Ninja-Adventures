@@ -43,7 +43,6 @@ public class Action_Wander : FSM_Action
         float randomY = Random.Range(-moveRange.y, moveRange.y);
 
         movePosition = transform.position + new Vector3(randomX, randomY);
-        print(movePosition);
     }
 
 
