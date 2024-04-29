@@ -23,11 +23,27 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI statCurrentXP;
     [SerializeField] TextMeshProUGUI statNextLevelXP;
 
+    [Header("Attributes")]
+    [SerializeField] TextMeshProUGUI availablePoints;
+    [SerializeField] TextMeshProUGUI strength;
+    [SerializeField] TextMeshProUGUI dexterity;
+    [SerializeField] TextMeshProUGUI intelligence;
+
     [Header("Player UI Text")]
     [SerializeField] TextMeshProUGUI levelText;
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI manaText;
     [SerializeField] TextMeshProUGUI xpText;
+
+    private void Start()
+    {
+        PlayerUpgrade.OnPlayerUpgrade += PlayerUpgraded;
+    }
+
+    void PlayerUpgraded()
+    {
+        UpdateStatsPanel();
+    }
 
     private void Update()
     {
@@ -52,6 +68,12 @@ public class UIManager : MonoBehaviour
         statTotalXP.text = playerStats.TotalXP.ToString();
         statCurrentXP.text = playerStats.CurrentXP.ToString();
         statNextLevelXP.text = playerStats.NextLevelXP.ToString();
+
+        availablePoints.text = $"Points: {playerStats.AvailablePoints}";
+        strength.text = playerStats.Strength.ToString();
+        dexterity.text = playerStats.Dexterity.ToString();
+        intelligence.text = playerStats.Intelligence.ToString();
+
     }
 
     void UpdatePlayerUI()

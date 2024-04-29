@@ -10,6 +10,37 @@ public class PlayerUpgrade : MonoBehaviour
     [SerializeField] PlayerStats playerStats;
     [SerializeField] UpgradeValues[] settings;
 
+
+    private void Start()
+    {
+        AttributeButton.OnAttributePurchased += AttributePurchased;
+    }
+
+    private void AttributePurchased(AttributeType attributeType)
+    {
+        if (playerStats.AvailablePoints == 0)
+            return;
+
+        switch(attributeType)
+        {
+            case AttributeType.STRENGTH:
+                UpgradePlayer(0);
+                playerStats.Strength++;
+                break;
+            case AttributeType.DEXTERITY:
+                UpgradePlayer(1);
+                playerStats.Dexterity++;
+                break;
+            case AttributeType.INTELLIGENCE:
+                UpgradePlayer(2);
+                playerStats.Intelligence++;
+                break;
+        }
+
+        playerStats.AvailablePoints--;
+        OnPlayerUpgrade?.Invoke();
+    }
+
     void UpgradePlayer(int index)
     {
         playerStats.BaseDamage += settings[index].DamageIncrease;
@@ -21,6 +52,7 @@ public class PlayerUpgrade : MonoBehaviour
         playerStats.CriticalChance += settings[index].CChanceIncrease;
         playerStats.CriticalDamage += settings[index].CDamageIncrease;
     }
+
 }
 
 

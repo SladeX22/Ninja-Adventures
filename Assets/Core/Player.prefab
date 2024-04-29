@@ -36,7 +36,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066647225701279159}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.7, y: 0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -295,6 +295,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d39a84ee2c1564184c60cb52eecdc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: 9a2d7cabdc0a54f40995fff9d08b5f10, type: 2}
+  settings:
+  - name: Strength
+    DamageIncrease: 2
+    HealthIncrease: 1
+    ManaIncrease: 1
+    CChanceIncrease: 0.2
+    CDamageIncrease: 1
+  - name: Dexterity
+    DamageIncrease: 1
+    HealthIncrease: 2
+    ManaIncrease: 2
+    CChanceIncrease: 0.5
+    CDamageIncrease: 0.5
+  - name: Intelligence
+    DamageIncrease: 1
+    HealthIncrease: 1
+    ManaIncrease: 4
+    CChanceIncrease: 1
+    CDamageIncrease: 0.5
 --- !u!1 &2405477681507489265
 GameObject:
   m_ObjectHideFlags: 0

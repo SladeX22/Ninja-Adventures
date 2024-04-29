@@ -59,6 +59,6 @@ public class PlayerStats : ScriptableObject
         Strength = 0;
         Dexterity = 0;
         Intelligence = 0;
-        AvailablePoints = 0;
+        AvailablePoints = 3;
     }
 }

@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 5201924097372829998}
   - component: {fileID: 7151199547823018682}
   - component: {fileID: 5908908161824440589}
-  - component: {fileID: 4317984310030197701}
   - component: {fileID: 7210883477564943824}
+  - component: {fileID: 4889380361810069434}
   - component: {fileID: 3007882968818398227}
   - component: {fileID: 6286614779887272186}
   - component: {fileID: 5721836913000028791}
@@ -265,19 +265,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4317984310030197701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7631757783775385602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 242637af96b49b74aa8cc67284f11e92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: []
 --- !u!114 &7210883477564943824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,7 +281,7 @@ MonoBehaviour:
   states:
   - ID: 2
     Actions:
-    - {fileID: 5721836913000028791}
+    - {fileID: 4889380361810069434}
     Transitions:
     - Decision: {fileID: 3007882968818398227}
       TrueState: 3
@@ -316,6 +303,21 @@ MonoBehaviour:
     - Decision: {fileID: 6286614779887272186}
       TrueState: 0
       FalseState: 3
+--- !u!114 &4889380361810069434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7631757783775385602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01c7504946de5047b635698526039a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  wanderTime: 5
+  moveRange: {x: 3, y: 3}
 --- !u!114 &3007882968818398227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11bb49468018ba419b0777aad27b244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 5
+  aggroRange: 3
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -344,7 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c9b93f7cb8ed744b447f40339d2dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
+  attackRange: 2
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -360,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dda8e1d47dbef14f90fec0b58d5563f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 1
+  patrolSpeed: 2
 --- !u!114 &1301439293926163638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,8 +375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63913a03573ecf46b53fe7cbaa358aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 2
-  stoppingDistance: 0.25
+  chaseSpeed: 3
+  stoppingDistance: 0.5
 --- !u!114 &3438311969798077490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,7 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  timeBetweenAtacks: 2
+  timeBetweenAtacks: 3
 --- !u!114 &2783556269997842900
 MonoBehaviour:
   m_ObjectHideFlags: 0
