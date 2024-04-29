@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8625294204513535634}
   - component: {fileID: -2324378044204617521}
   - component: {fileID: -521998235097790718}
+  - component: {fileID: -4828211787606274501}
   m_Layer: 6
   m_Name: Flam
   m_TagString: Enemy
@@ -200,6 +201,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
+--- !u!114 &-4828211787606274501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878471356976607881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xPDropped: 5
 --- !u!1 &6211986275596741099
 GameObject:
   m_ObjectHideFlags: 0

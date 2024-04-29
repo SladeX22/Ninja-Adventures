@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 8361466568693077329}
   - component: {fileID: 541652668556784672}
   - component: {fileID: -905253981768221500}
+  - component: {fileID: -5210135182321996158}
   m_Layer: 6
   m_Name: Racoon
   m_TagString: Enemy
@@ -284,3 +285,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
+--- !u!114 &-5210135182321996158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6915810087505378275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xPDropped: 5

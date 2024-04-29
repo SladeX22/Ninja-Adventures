@@ -14,7 +14,18 @@ public class PlayerXP : MonoBehaviour
         while(playerStats.CurrentXP >= playerStats.NextLevelXP)
         {
             playerStats.CurrentXP -= playerStats.NextLevelXP;
-            //NextLevel();
+            NextLevel();
         }
+    }
+
+    void NextLevel()
+    {
+        playerStats.CurrentLevel++;
+        playerStats.AvailablePoints++;
+
+        var currXPRequired = playerStats.NextLevelXP;
+        var newNextLevelXP = Mathf.Round(currXPRequired + playerStats.NextLevelXP * (playerStats.XPMultiplier / 100f));
+
+        playerStats.NextLevelXP = newNextLevelXP;
     }
 }

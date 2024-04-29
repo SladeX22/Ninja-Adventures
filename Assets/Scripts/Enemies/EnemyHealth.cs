@@ -6,15 +6,15 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour, IDamagable
 {
     [SerializeField] float health;
-
     Animator anim;
     public float CurrentHealth { get; private set; }
-
     public static event Action OnEnemyDead;
+    EnemyLoot enemyLoot;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
+        enemyLoot = GetComponent<EnemyLoot>();
     }
 
     private void Start()
@@ -28,15 +28,21 @@ public class EnemyHealth : MonoBehaviour, IDamagable
 
         if(CurrentHealth <= 0f)
         {
-            anim.SetTrigger("gotKilled");
-            GetComponent<EnemyBrain>().enabled = false;
-            GetComponent<EnemySelector>().DeactivateSelector();
-            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
-            OnEnemyDead?.Invoke();
+            DisableEnemy();
         }
         else
         {
             DamageManager.i.ShowDamageText(amount, transform);
         }
+    }
+
+    private void DisableEnemy()
+    {
+        anim.SetTrigger("gotKilled");
+        GetComponent<EnemyBrain>().enabled = false;
+        GetComponent<EnemySelector>().DeactivateSelector();
+        gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        OnEnemyDead?.Invoke();
+        GameManager.i.AddPlayerXP(enemyLoot.XPDropped);
     }
 }
