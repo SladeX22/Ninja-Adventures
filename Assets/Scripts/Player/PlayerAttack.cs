@@ -146,8 +146,6 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-
-
     void SetCurrentTarget(EnemyBrain selectedTarget)
     {
         target = selectedTarget;
@@ -157,9 +155,6 @@ public class PlayerAttack : MonoBehaviour
     {
         target = null;
     }
-
-
-
 
 
     private void OnEnable()

@@ -23,9 +23,9 @@ MonoBehaviour:
   CurrentMana: 162
   MaxMana: 58
   CurrentXP: 0
-  NextLevelXP: 0
-  InitialLevelXP: 0
-  XPMultiplier: 0
+  NextLevelXP: 50
+  InitialLevelXP: 50
+  XPMultiplier: 2
   Strength: 0
   Dexterity: 0
   Intelligence: 2

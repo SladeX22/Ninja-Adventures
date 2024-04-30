@@ -85,7 +85,7 @@ public class UIManager : MonoBehaviour
         levelText.text = $"Level {playerStats.CurrentLevel}";
         healthText.text = $"{playerStats.CurrentHealth} / {playerStats.MaxHealth}";
         manaText.text = $"{playerStats.CurrentMana} / {playerStats.MaxMana}";
-        healthText.text = $"{playerStats.CurrentXP} / {playerStats.NextLevelXP}";
+        xpText.text = $"{playerStats.CurrentXP} / {playerStats.NextLevelXP}";
 
     }
 
