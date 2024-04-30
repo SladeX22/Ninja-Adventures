@@ -15,18 +15,18 @@ MonoBehaviour:
   CurrentLevel: 1
   TotalXP: 0
   TotalDamage: 8
-  BaseDamage: 4
-  CriticalDamage: 51
-  CriticalChance: 12
-  CurrentHealth: 33
-  MaxHealth: 12
-  CurrentMana: 162
-  MaxMana: 58
+  BaseDamage: 2
+  CriticalDamage: 5
+  CriticalChance: 10
+  CurrentHealth: 10
+  MaxHealth: 10
+  CurrentMana: 20
+  MaxMana: 20
   CurrentXP: 0
   NextLevelXP: 50
   InitialLevelXP: 50
-  XPMultiplier: 2
+  XPMultiplier: 1.125
   Strength: 0
   Dexterity: 0
-  Intelligence: 2
-  AvailablePoints: 1
+  Intelligence: 0
+  AvailablePoints: 3

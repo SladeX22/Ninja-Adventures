@@ -55,7 +55,7 @@ public class PlayerStats : ScriptableObject
         TotalXP = 0;
         BaseDamage = 2;
         CriticalChance = 10;
-        CriticalDamage = 50;
+        CriticalDamage = 20;
         Strength = 0;
         Dexterity = 0;
         Intelligence = 0;
