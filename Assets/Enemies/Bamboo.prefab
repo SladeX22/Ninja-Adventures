@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1386051225
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a48980d4c4a5d3440b67c0d15e1710c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,16 +99,13 @@ GameObject:
   - component: {fileID: 7418116952826335489}
   - component: {fileID: -813746191178472953}
   - component: {fileID: 786212150138484123}
-  - component: {fileID: -1182633956528883061}
-  - component: {fileID: -1859408939742918192}
   - component: {fileID: 4677839575814221185}
   - component: {fileID: -33497096032181548}
-  - component: {fileID: -1539776774192098928}
   - component: {fileID: -2633058637185894965}
   - component: {fileID: -6924133524075523901}
   - component: {fileID: -5250309454547899086}
-  - component: {fileID: -3215984504485236528}
   - component: {fileID: -7021962704298662457}
+  - component: {fileID: 8676614674423500663}
   m_Layer: 6
   m_Name: Bamboo
   m_TagString: Enemy
@@ -279,30 +276,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11beb889ef23ab4ab546cfb88acafe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: 2
+  initState: 1
   states:
-  - ID: 2
+  - ID: 1
     Actions:
-    - {fileID: 0}
+    - {fileID: 8676614674423500663}
     Transitions:
-    - Decision: {fileID: 0}
+    - Decision: {fileID: 4677839575814221185}
       TrueState: 3
       FalseState: 0
   - ID: 3
     Actions:
-    - {fileID: 0}
+    - {fileID: -2633058637185894965}
     Transitions:
-    - Decision: {fileID: 0}
+    - Decision: {fileID: 4677839575814221185}
       TrueState: 0
-      FalseState: 2
-    - Decision: {fileID: 0}
+      FalseState: 1
+    - Decision: {fileID: -33497096032181548}
       TrueState: 4
       FalseState: 0
   - ID: 4
     Actions:
-    - {fileID: 0}
+    - {fileID: -6924133524075523901}
     Transitions:
-    - Decision: {fileID: 0}
+    - Decision: {fileID: -33497096032181548}
       TrueState: 0
       FalseState: 3
 --- !u!114 &786212150138484123
@@ -317,39 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7e215494e59cb4b8fe30812e1070f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
---- !u!114 &-1182633956528883061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6010388640522255183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xPDropped: 5
---- !u!114 &-1859408939742918192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6010388640522255183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 242637af96b49b74aa8cc67284f11e92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points:
-  - {x: 2.4628994, y: -1.8821292, z: 0}
-  - {x: 4.2273965, y: 0.90185344, z: 0}
-  - {x: -0.7524042, y: 3.2937264, z: 0}
-  - {x: 1.757102, y: 1.8037069, z: 0}
-  - {x: -1.7718892, y: -1.3331752, z: 0}
-  - {x: -3.183487, y: 0.47053242, z: 0}
+  health: 3
 --- !u!114 &4677839575814221185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11bb49468018ba419b0777aad27b244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 5
+  aggroRange: 3
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -382,19 +347,6 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
---- !u!114 &-1539776774192098928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6010388640522255183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dda8e1d47dbef14f90fec0b58d5563f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolSpeed: 1
 --- !u!114 &-2633058637185894965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,8 +359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63913a03573ecf46b53fe7cbaa358aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 2
-  stoppingDistance: 0.25
+  chaseSpeed: 1
+  stoppingDistance: 0.5
 --- !u!114 &-6924133524075523901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,20 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27addbe35e2b4014c89e7e06fc7dc50f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectorSprite: {fileID: 5308924314030008672, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
---- !u!114 &-3215984504485236528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6010388640522255183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a7e215494e59cb4b8fe30812e1070f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
+  selectorSprite: {fileID: 2861884302787616385}
 --- !u!114 &-7021962704298662457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,3 +401,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xPDropped: 5
+--- !u!114 &8676614674423500663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010388640522255183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01c7504946de5047b635698526039a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  wanderTime: 4
+  moveRange: {x: 2, y: 2}

@@ -5,8 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager i;
+    [SerializeField] PlayerData playerData;
+    public PlayerData PlayerData
+    {
+        get { return playerData; }
+    }
 
-    [SerializeField] GameObject player;
 
     private void Awake()
     {
@@ -15,8 +19,11 @@ public class GameManager : MonoBehaviour
 
     public void AddPlayerXP(float amount)
     {
-        PlayerXP playerXP = player.GetComponent<PlayerXP>();
+        PlayerXP playerXP = playerData.GetComponent<PlayerXP>();
         playerXP.AddXP(amount);
-
     }
+
+    
+
+
 }

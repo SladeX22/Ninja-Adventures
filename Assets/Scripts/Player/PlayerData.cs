@@ -8,14 +8,23 @@ public class PlayerData : MonoBehaviour
 
     PlayerAnimation playerAnimation;
     PlayerMana playerMana;
+    PlayerHealth playerHealth;
+
+    public PlayerStats PlayerStats => playerStats;
+    //public PlayerHealth PlayerHealth=> playerHealth;
+
+    public PlayerHealth PlayerHealth
+    {
+        get { return playerHealth; }
+    }
 
     private void Awake()
     {
         playerAnimation = GetComponent<PlayerAnimation>();
         playerMana = GetComponent<PlayerMana>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
-    public PlayerStats PlayerStats => playerStats;
 
     private void Update()
     {
