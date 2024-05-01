@@ -2,19 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
-    public static GameManager i;
     [SerializeField] PlayerData playerData;
     public PlayerData PlayerData
     {
         get { return playerData; }
-    }
-
-
-    private void Awake()
-    {
-        i = this;
     }
 
     public void AddPlayerXP(float amount)

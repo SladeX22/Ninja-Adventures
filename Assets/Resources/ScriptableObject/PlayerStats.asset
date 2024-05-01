@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevel: 1
   TotalXP: 0
-  TotalDamage: 8
+  TotalDamage: 6
   BaseDamage: 2
-  CriticalDamage: 5
+  CriticalDamage: 20
   CriticalChance: 10
-  CurrentHealth: 10
-  MaxHealth: 10
+  CurrentHealth: 9999
+  MaxHealth: 9999
   CurrentMana: 20
   MaxMana: 20
   CurrentXP: 0

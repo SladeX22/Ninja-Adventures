@@ -194,12 +194,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: 2.4628994, y: -1.8821292, z: 0}
-  - {x: 4.2273965, y: 0.90185344, z: 0}
-  - {x: -0.7524042, y: 3.2937264, z: 0}
-  - {x: 1.757102, y: 1.8037069, z: 0}
-  - {x: -1.7718892, y: -1.3331752, z: 0}
-  - {x: -3.183487, y: 0.47053242, z: 0}
+  - {x: -1.6593533, y: -1.216455, z: 0}
+  - {x: 1.9134369, y: 0.97727346, z: 0}
+  - {x: 0.32318497, y: 0.65201473, z: 0}
+  - {x: -2.1013813, y: 0.8354883, z: 0}
+  - {x: 1.5917511, y: -0.5614648, z: 0}
+  - {x: -0.2588482, y: -1.532166, z: 0}
+  - {x: 0.8643818, y: -2.003982, z: 0}
+  - {x: -0.43754578, y: 1.5265188, z: 0}
 --- !u!114 &-2324378044204617521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,26 +218,26 @@ MonoBehaviour:
   states:
   - ID: 2
     Actions:
-    - {fileID: 8355379176648518630, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
+    - {fileID: 4885763337175875884}
     Transitions:
-    - Decision: {fileID: 8155847578487660695, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
+    - Decision: {fileID: 2819185732264952180}
       TrueState: 3
       FalseState: 0
   - ID: 3
     Actions:
-    - {fileID: 2682321596813818052, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
+    - {fileID: -1892171985388984321}
     Transitions:
-    - Decision: {fileID: 8155847578487660695, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
+    - Decision: {fileID: 2819185732264952180}
       TrueState: 0
       FalseState: 2
-    - Decision: {fileID: 3776057746004142124, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
+    - Decision: {fileID: 5148208874652417467}
       TrueState: 4
       FalseState: 0
   - ID: 4
     Actions:
-    - {fileID: 1044556662246609778, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
+    - {fileID: -2818566501341591583}
     Transitions:
-    - Decision: {fileID: 3776057746004142124, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
+    - Decision: {fileID: 5148208874652417467}
       TrueState: 0
       FalseState: 3
 --- !u!114 &-521998235097790718
@@ -263,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11bb49468018ba419b0777aad27b244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 5
+  aggroRange: 4
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -295,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dda8e1d47dbef14f90fec0b58d5563f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 1
+  patrolSpeed: 2
 --- !u!114 &-1892171985388984321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,8 +310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63913a03573ecf46b53fe7cbaa358aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 2
-  stoppingDistance: 0.25
+  chaseSpeed: 2.15
+  stoppingDistance: 1
 --- !u!114 &-2818566501341591583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,8 +324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd663b4330aca5b47974fa44fd2c8a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  timeBetweenAtacks: 2
+  damage: 4
+  timeBetweenAtacks: 1.8
 --- !u!114 &7964577654937576103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27addbe35e2b4014c89e7e06fc7dc50f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectorSprite: {fileID: 5308924314030008672, guid: db7c232b326b9cd41a1fcd6128c5a2ce, type: 3}
+  selectorSprite: {fileID: 6211986275596741099}
 --- !u!114 &-4828211787606274501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPDropped: 5
+  xPDropped: 8
 --- !u!1 &6211986275596741099
 GameObject:
   m_ObjectHideFlags: 0

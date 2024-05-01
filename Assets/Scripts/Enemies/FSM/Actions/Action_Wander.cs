@@ -10,7 +10,12 @@ public class Action_Wander : FSM_Action
 
     Vector3 movePosition;
     float timer;
+    EnemyAnimation enemyAnimation;
 
+    private void Awake()
+    {
+        enemyAnimation = GetComponent<EnemyAnimation>();
+    }
 
     private void Start()
     {
@@ -34,6 +39,8 @@ public class Action_Wander : FSM_Action
             GetNewDestination();
             timer = wanderTime;
         }
+
+        enemyAnimation.HandleMovingAnimation(movement);
     }
 
 
