@@ -18,8 +18,8 @@ MonoBehaviour:
   BaseDamage: 2
   CriticalDamage: 20
   CriticalChance: 10
-  CurrentHealth: 9999
-  MaxHealth: 9999
+  CurrentHealth: 10
+  MaxHealth: 10
   CurrentMana: 20
   MaxMana: 20
   CurrentXP: 0
