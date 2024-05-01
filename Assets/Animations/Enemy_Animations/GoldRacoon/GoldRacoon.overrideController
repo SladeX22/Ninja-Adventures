@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GoldRacoon
+  m_Controller: {fileID: 9100000, guid: 685f49a2b380f9d4ebb8d758a868f820, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: fe2316bca18575847a54bc5f79945317, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f23942bd952316f4c9f6172bc54144e2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d8dfb09b78861c542bfe6c5048f4e724, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 76870792deb507a47985d5170bba663f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9e9638a101231fe4daf1fdd0ef0c904d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 90c0817d0ca88514fac83946e543b984, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 10e285ef7af5e2743a825677b9e64e2c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0e9cb3c9a21d22244a4a371bff8802a5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 09590c4f44dfdfb4598cc59fccef1be1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a49e99013cc238847a87189d5c7fdd33, type: 2}

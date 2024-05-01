@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 3677374162736775111}
   - component: {fileID: 943193597987976616}
   - component: {fileID: 4649971407017178242}
-  - component: {fileID: 3950766959623989863}
   m_Layer: 6
   m_Name: Beast
   m_TagString: Enemy
@@ -353,18 +352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPDropped: 5
 --- !u!114 &4649971407017178242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4733742508596075808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee7f0d130a731d947a92da92bd49b411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3950766959623989863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

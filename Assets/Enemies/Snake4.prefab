@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: -7776186316370886328}
   - component: {fileID: 5928959333724747675}
   - component: {fileID: 264432301555522001}
+  - component: {fileID: -2259026864279352308}
   m_Layer: 6
   m_Name: Snake4
   m_TagString: Enemy
@@ -434,3 +435,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xPDropped: 5
+--- !u!114 &-2259026864279352308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6730143839054093802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7f0d130a731d947a92da92bd49b411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

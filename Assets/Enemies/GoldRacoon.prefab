@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 6716818102594601782}
   - component: {fileID: -6401205735612723962}
   - component: {fileID: 729589715231740117}
+  - component: {fileID: 2891537207629950850}
   m_Layer: 6
   m_Name: GoldRacoon
   m_TagString: Enemy
@@ -434,3 +435,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xPDropped: 5
+--- !u!114 &2891537207629950850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441559404150572355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7f0d130a731d947a92da92bd49b411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

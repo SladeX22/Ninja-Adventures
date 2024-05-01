@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: -6924133524075523901}
   - component: {fileID: -5250309454547899086}
   - component: {fileID: -7021962704298662457}
+  - component: {fileID: 7679182282314460161}
   - component: {fileID: 8676614674423500663}
   m_Layer: 6
   m_Name: Bamboo
@@ -253,7 +254,7 @@ Animator:
   m_GameObject: {fileID: 6010388640522255183}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f85d5dbaab512f64aa093d89a88f0826, type: 2}
+  m_Controller: {fileID: 22100000, guid: f69c8b4a0175766409618d464ed655db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -401,6 +402,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xPDropped: 3
+--- !u!114 &7679182282314460161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010388640522255183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7f0d130a731d947a92da92bd49b411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8676614674423500663
 MonoBehaviour:
   m_ObjectHideFlags: 0
