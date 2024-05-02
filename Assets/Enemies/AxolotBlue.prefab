@@ -101,7 +101,6 @@ GameObject:
   - component: {fileID: 4889380361810069434}
   - component: {fileID: 3007882968818398227}
   - component: {fileID: 6286614779887272186}
-  - component: {fileID: 5721836913000028791}
   - component: {fileID: 1301439293926163638}
   - component: {fileID: 3438311969798077490}
   - component: {fileID: 2783556269997842900}
@@ -278,9 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11beb889ef23ab4ab546cfb88acafe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: 2
+  initState: 1
   states:
-  - ID: 2
+  - ID: 1
     Actions:
     - {fileID: 4889380361810069434}
     Transitions:
@@ -293,7 +292,7 @@ MonoBehaviour:
     Transitions:
     - Decision: {fileID: 3007882968818398227}
       TrueState: 0
-      FalseState: 2
+      FalseState: 1
     - Decision: {fileID: 6286614779887272186}
       TrueState: 4
       FalseState: 0
@@ -351,19 +350,6 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
---- !u!114 &5721836913000028791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7631757783775385602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dda8e1d47dbef14f90fec0b58d5563f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolSpeed: 2
 --- !u!114 &1301439293926163638
 MonoBehaviour:
   m_ObjectHideFlags: 0

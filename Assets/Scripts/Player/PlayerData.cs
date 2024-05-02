@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour
 {
     [SerializeField] PlayerStats playerStats;
+    [SerializeField] Item_ManaPotion manaPotion;
 
     PlayerAnimation playerAnimation;
     PlayerMana playerMana;
@@ -16,6 +17,11 @@ public class PlayerData : MonoBehaviour
     public PlayerHealth PlayerHealth
     {
         get { return playerHealth; }
+    }
+
+    public PlayerMana PlayerMana
+    {
+        get { return playerMana; }
     }
 
     private void Awake()
@@ -30,8 +36,11 @@ public class PlayerData : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (playerStats.CurrentHealth <= 0)
-                PlayerReset();
+            var result = manaPotion.UseItem();
+            if (result)
+            {
+                print("Used mana potion");
+            }
         }
     }
 
