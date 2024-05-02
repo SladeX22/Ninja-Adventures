@@ -197,6 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 9a2d7cabdc0a54f40995fff9d08b5f10, type: 2}
+  manaPotion: {fileID: 11400000, guid: e31bfdf5ebfdce948903ffecaa87da3e, type: 2}
 --- !u!114 &5458677668380922331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slashFX: {fileID: 4316132290656512307}
-  attackRange: 3
+  attackRange: 2
   initialWeapon: {fileID: 11400000, guid: dda5a1ed400492b499cbd7dee967625b, type: 2}
   attackPositions:
   - {fileID: 6784525890217904443}

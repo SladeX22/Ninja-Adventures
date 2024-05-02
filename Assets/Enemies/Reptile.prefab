@@ -105,8 +105,8 @@ GameObject:
   - component: {fileID: 5569523578477501141}
   - component: {fileID: -470039529450064774}
   - component: {fileID: -8578669688635274854}
-  - component: {fileID: 7310549615081068315}
   - component: {fileID: -7618120820313385886}
+  - component: {fileID: -44992695074717073}
   m_Layer: 6
   m_Name: Reptile
   m_TagString: Enemy
@@ -254,7 +254,7 @@ Animator:
   m_GameObject: {fileID: 8700050108127452271}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e01233cdb69129b4ca72e8b563b97b6b, type: 2}
+  m_Controller: {fileID: 22100000, guid: 9bf3a0fabfb2413468b0645e790b5956, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
   states:
   - ID: 1
     Actions:
-    - {fileID: 7310549615081068315}
+    - {fileID: 0}
     Transitions:
     - Decision: {fileID: 3479174241464746547}
       TrueState: 3
@@ -402,21 +402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xPDropped: 30
---- !u!114 &7310549615081068315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8700050108127452271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c01c7504946de5047b635698526039a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1.25
-  wanderTime: 2.75
-  moveRange: {x: 2.5, y: 2.5}
 --- !u!114 &-7618120820313385886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,3 +414,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7f0d130a731d947a92da92bd49b411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-44992695074717073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8700050108127452271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242637af96b49b74aa8cc67284f11e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
