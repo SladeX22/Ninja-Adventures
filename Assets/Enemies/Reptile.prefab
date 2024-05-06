@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7e215494e59cb4b8fe30812e1070f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 45
+  health: 500
 --- !u!114 &3479174241464746547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,8 +360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63913a03573ecf46b53fe7cbaa358aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 1.75
-  stoppingDistance: 0.15
+  chaseSpeed: 2.75
+  stoppingDistance: 2
 --- !u!114 &5569523578477501141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,8 +374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd663b4330aca5b47974fa44fd2c8a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  timeBetweenAtacks: 2
+  damage: 20
+  timeBetweenAtacks: 4
 --- !u!114 &-470039529450064774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPDropped: 30
+  xPDropped: 100
 --- !u!114 &-7618120820313385886
 MonoBehaviour:
   m_ObjectHideFlags: 0

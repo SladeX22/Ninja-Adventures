@@ -36,7 +36,6 @@ public class PlayerUpgrade : MonoBehaviour
                 playerStats.Intelligence++;
                 break;
         }
-
         playerStats.AvailablePoints--;
         OnPlayerUpgrade?.Invoke();
     }
@@ -46,9 +45,9 @@ public class PlayerUpgrade : MonoBehaviour
         playerStats.BaseDamage += settings[index].DamageIncrease;
         playerStats.TotalDamage += settings[index].DamageIncrease;
         playerStats.MaxHealth += settings[index].HealthIncrease;
-        playerStats.CurrentHealth += playerStats.MaxHealth;
+        playerStats.CurrentHealth = playerStats.MaxHealth;
         playerStats.MaxMana += settings[index].ManaIncrease;
-        playerStats.CurrentMana += playerStats.MaxMana;
+        playerStats.CurrentMana = playerStats.MaxMana;
         playerStats.CriticalChance += settings[index].CChanceIncrease;
         playerStats.CriticalDamage += settings[index].CDamageIncrease;
     }

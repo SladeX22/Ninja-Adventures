@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentLevel: 1
   TotalXP: 0
-  TotalDamage: 6
+  TotalDamage: 13.75
   BaseDamage: 2
-  CriticalDamage: 20
-  CriticalChance: 10
+  CriticalDamage: 10
+  CriticalChance: 2.5
   CurrentHealth: 10
   MaxHealth: 10
-  CurrentMana: 20
-  MaxMana: 20
+  CurrentMana: 10
+  MaxMana: 10
   CurrentXP: 0
   NextLevelXP: 50
   InitialLevelXP: 50
@@ -29,4 +29,4 @@ MonoBehaviour:
   Strength: 0
   Dexterity: 0
   Intelligence: 0
-  AvailablePoints: 3
+  AvailablePoints: 0
