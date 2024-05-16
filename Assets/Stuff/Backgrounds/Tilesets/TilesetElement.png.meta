@@ -407,7 +407,7 @@ TextureImporter:
       name: TilesetElement_14
       rect:
         serializedVersion: 2
-        x: 224
+        x: 223
         y: 224
         width: 16
         height: 16
@@ -635,32 +635,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetElement_26
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a53a28a72dc1c9d449974bc876363afc
-      internalID: -1197634653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: TilesetElement_27
       rect:
         serializedVersion: 2
-        x: 208
-        y: 208
+        x: 207
+        y: 206
         width: 16
         height: 16
       alignment: 0
@@ -680,8 +659,8 @@ TextureImporter:
       name: TilesetElement_28
       rect:
         serializedVersion: 2
-        x: 224
-        y: 208
+        x: 223
+        y: 206
         width: 16
         height: 16
       alignment: 0
@@ -701,8 +680,8 @@ TextureImporter:
       name: TilesetElement_29
       rect:
         serializedVersion: 2
-        x: 240
-        y: 208
+        x: 239
+        y: 206
         width: 16
         height: 16
       alignment: 0
@@ -819,69 +798,6 @@ TextureImporter:
       bones: []
       spriteID: 25efe313a07ac2147a20b1de58d85b84
       internalID: 982676062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetElement_35
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f4b7531f8098ae4a84fe775f5d927fd
-      internalID: -6767084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetElement_36
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc3278f2422d7ee48950a042811d0910
-      internalID: 1910400037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetElement_37
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b552ff3905421c4d8285bf80ad47b3d
-      internalID: 178201841
       vertices: []
       indices: 
       edges: []
@@ -1772,7 +1688,7 @@ TextureImporter:
       name: TilesetElement_81
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 112
         width: 16
         height: 16
@@ -1793,7 +1709,7 @@ TextureImporter:
       name: TilesetElement_82
       rect:
         serializedVersion: 2
-        x: 48
+        x: 50
         y: 112
         width: 16
         height: 16
@@ -1814,7 +1730,7 @@ TextureImporter:
       name: TilesetElement_83
       rect:
         serializedVersion: 2
-        x: 64
+        x: 67
         y: 112
         width: 16
         height: 16
@@ -2003,7 +1919,7 @@ TextureImporter:
       name: TilesetElement_93
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 96
         width: 16
         height: 16
@@ -2024,7 +1940,7 @@ TextureImporter:
       name: TilesetElement_94
       rect:
         serializedVersion: 2
-        x: 48
+        x: 50
         y: 96
         width: 16
         height: 16
@@ -2045,7 +1961,7 @@ TextureImporter:
       name: TilesetElement_95
       rect:
         serializedVersion: 2
-        x: 64
+        x: 67
         y: 96
         width: 16
         height: 16
@@ -2399,69 +2315,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetElement_114
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e985de9011e430245b376fe6beb9225a
-      internalID: 2128963693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetElement_115
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c6c9888719adb444aa0c6b60e352e16
-      internalID: -426979253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetElement_116
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb6c9c4090a8ff84c82f19ea2356fc23
-      internalID: -796043656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: TilesetElement_117
       rect:
         serializedVersion: 2
@@ -2486,7 +2339,7 @@ TextureImporter:
       name: TilesetElement_118
       rect:
         serializedVersion: 2
-        x: 240
+        x: 239
         y: 80
         width: 16
         height: 16
@@ -2735,69 +2588,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetElement_130
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41a820ccdb243cf43856e8e3a8e8ce5b
-      internalID: 976343204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetElement_131
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3eef41b18d98ac247bc48194708df1bf
-      internalID: 304591635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetElement_132
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9225fe629a53bd04cac9ae6d2ea62a20
-      internalID: 890004418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: TilesetElement_133
       rect:
         serializedVersion: 2
@@ -2885,7 +2675,7 @@ TextureImporter:
       name: TilesetElement_137
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 48
         width: 16
         height: 16
@@ -2906,7 +2696,7 @@ TextureImporter:
       name: TilesetElement_138
       rect:
         serializedVersion: 2
-        x: 48
+        x: 50
         y: 48
         width: 16
         height: 16
@@ -2927,7 +2717,7 @@ TextureImporter:
       name: TilesetElement_139
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 48
         width: 16
         height: 16
@@ -2948,7 +2738,7 @@ TextureImporter:
       name: TilesetElement_140
       rect:
         serializedVersion: 2
-        x: 80
+        x: 83
         y: 48
         width: 16
         height: 16
@@ -2966,31 +2756,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetElement_141
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5cd5cadbf3b70c47994510ec2f083d4
-      internalID: 1542621759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: TilesetElement_142
       rect:
         serializedVersion: 2
-        x: 112
+        x: 113
         y: 48
         width: 16
         height: 16
@@ -3011,7 +2780,7 @@ TextureImporter:
       name: TilesetElement_143
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 48
         width: 16
         height: 16
@@ -3032,7 +2801,7 @@ TextureImporter:
       name: TilesetElement_144
       rect:
         serializedVersion: 2
-        x: 144
+        x: 145
         y: 48
         width: 16
         height: 16
@@ -3053,7 +2822,7 @@ TextureImporter:
       name: TilesetElement_145
       rect:
         serializedVersion: 2
-        x: 160
+        x: 161
         y: 48
         width: 16
         height: 16
@@ -3074,7 +2843,7 @@ TextureImporter:
       name: TilesetElement_146
       rect:
         serializedVersion: 2
-        x: 112
+        x: 113
         y: 32
         width: 16
         height: 16
@@ -3095,7 +2864,7 @@ TextureImporter:
       name: TilesetElement_147
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 32
         width: 16
         height: 16
@@ -3116,7 +2885,7 @@ TextureImporter:
       name: TilesetElement_148
       rect:
         serializedVersion: 2
-        x: 144
+        x: 145
         y: 32
         width: 16
         height: 16
@@ -3137,7 +2906,7 @@ TextureImporter:
       name: TilesetElement_149
       rect:
         serializedVersion: 2
-        x: 160
+        x: 161
         y: 32
         width: 16
         height: 16
@@ -3158,7 +2927,7 @@ TextureImporter:
       name: TilesetElement_150
       rect:
         serializedVersion: 2
-        x: 112
+        x: 113
         y: 16
         width: 16
         height: 16
@@ -3179,7 +2948,7 @@ TextureImporter:
       name: TilesetElement_151
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 16
         width: 16
         height: 16
@@ -3200,7 +2969,7 @@ TextureImporter:
       name: TilesetElement_152
       rect:
         serializedVersion: 2
-        x: 144
+        x: 145
         y: 16
         width: 16
         height: 16
@@ -3221,7 +2990,7 @@ TextureImporter:
       name: TilesetElement_153
       rect:
         serializedVersion: 2
-        x: 160
+        x: 161
         y: 16
         width: 16
         height: 16

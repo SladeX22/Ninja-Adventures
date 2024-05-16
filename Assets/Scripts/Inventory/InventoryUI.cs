@@ -9,7 +9,6 @@ public class InventoryUI : Singleton<InventoryUI>
 {
     [SerializeField] InventorySlot slotPrefab;
     [SerializeField] Transform container;
-    [SerializeField] GameObject inventoryPanel;
     
     List<InventorySlot> slotList = new List<InventorySlot>();
 
@@ -30,11 +29,6 @@ public class InventoryUI : Singleton<InventoryUI>
             slot.Index = i;
             slotList.Add(slot);
         }
-    }
-
-    public void ToggleInventory()
-    {
-        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
     }
 
     void SlotSelected(int index)
