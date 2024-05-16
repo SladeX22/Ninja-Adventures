@@ -13,13 +13,36 @@ public class Inventory : Singleton<Inventory>
     private void Start()
     {
         inventoryItems = new InventoryItem[inventorySize];
-        CheckSlotForItem();
+        //CheckSlotForItem();
     }
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.H))
         {
             AddItem(testItem, 2);
+        }
+    }
+
+    public void UseItem(int index)
+    {
+        if(inventoryItems[index] == null)
+            return;
+        if(inventoryItems[index].UseItem())
+            DecreaseItem(index);
+    }
+
+    void DecreaseItem(int index)
+    {
+        inventoryItems[index].Quantity--;
+
+        if(inventoryItems[index].Quantity <= 0 )
+        {
+            inventoryItems[index] = null;
+            InventoryUI.i.DrawItem(null, index);
+        }
+        else
+        {
+            InventoryUI.i.DrawItem(inventoryItems[index], index);
         }
     }
 
@@ -97,6 +120,8 @@ public class Inventory : Singleton<Inventory>
 
             inventoryItems[i] = item.CreateItem();
             inventoryItems[i].Quantity = quantity;
+            InventoryUI.i.DrawItem(inventoryItems[i], i);
+            return;
         }
     }
 

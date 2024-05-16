@@ -56,6 +56,10 @@ MonoBehaviour:
   statTotalXP: {fileID: 0}
   statCurrentXP: {fileID: 0}
   statNextLevelXP: {fileID: 0}
+  availablePoints: {fileID: 0}
+  strength: {fileID: 0}
+  dexterity: {fileID: 0}
+  intelligence: {fileID: 0}
   levelText: {fileID: 0}
   healthText: {fileID: 0}
   manaText: {fileID: 0}

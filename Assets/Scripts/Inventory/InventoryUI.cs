@@ -2,27 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class InventoryUI : Singleton<InventoryUI>
 {
     [SerializeField] InventorySlot slotPrefab;
     [SerializeField] Transform container;
+    [SerializeField] GameObject inventoryPanel;
     
     List<InventorySlot> slotList = new List<InventorySlot>();
 
     public InventorySlot CurrentSlot { get; set; }
-    
+
 
     private void Start()
     {
-       InitInventory();
+        InitInventory();
         InventorySlot.OnSlotSelected += SlotSelected;
-
     }
 
     void InitInventory()
     {
-        for (int i = 0; i < Inventory.i.InventorySize; i++)
+        for(int i = 0; i < Inventory.i.InventorySize; i++)
         {
             InventorySlot slot = Instantiate(slotPrefab, container);
             slot.Index = i;
@@ -30,9 +32,19 @@ public class InventoryUI : Singleton<InventoryUI>
         }
     }
 
+    public void ToggleInventory()
+    {
+        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+    }
+
     void SlotSelected(int index)
     {
         CurrentSlot = slotList[index];
+    }
+
+    public void UseItem()
+    {
+        Inventory.i.UseItem(CurrentSlot.Index);
     }
 
     public void RemoveItem()

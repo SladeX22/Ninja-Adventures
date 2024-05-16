@@ -46,10 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 24
-  inventoryItems:
-  - {fileID: 11400000, guid: b823d66fbe0610a448ae3e3aea191690, type: 2}
-  - {fileID: 11400000, guid: c98f6b56a8167e344a0a9a5be0aa3f45, type: 2}
-  testItem: {fileID: 11400000, guid: b823d66fbe0610a448ae3e3aea191690, type: 2}
+  inventoryItems: []
+  testItem: {fileID: 11400000, guid: c98f6b56a8167e344a0a9a5be0aa3f45, type: 2}
 --- !u!114 &1557166200061672851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +60,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f0b71017a6e0f4baf4ee8fdafeb5e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryPanel: {fileID: 0}
   slotPrefab: {fileID: 5360472859170915628, guid: 4b9a6608cef51cd4c87996c0427efc31, type: 3}
-  container: {fileID: 4193162709954700663, guid: b8ef62720f88da54aad860fdf65e949f, type: 3}
+  container: {fileID: 0}
+  inventoryPanel: {fileID: 0}
