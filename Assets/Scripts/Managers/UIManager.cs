@@ -13,6 +13,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] Image manaBar;
     [SerializeField] Image xpBar;
 
+    [Header("Inventory Panel")]
+    [SerializeField] GameObject inventoryPanel;
+
     [Header("Stat Panel")]
     [SerializeField] GameObject statsPanel;
     [SerializeField] TextMeshProUGUI statLevel;
@@ -48,6 +51,11 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         UpdatePlayerUI();
+    }
+
+    public void ToggleInventoryPanel()
+    {
+        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
     }
 
     public void ToggleStatsPanel()

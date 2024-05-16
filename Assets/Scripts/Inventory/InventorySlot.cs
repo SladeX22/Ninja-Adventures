@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class InventorySlot : MonoBehaviour
 {
+    public static event Action<int> OnSlotSelected;
+
     [SerializeField] Image itemIcon;
     [SerializeField] Image qtyImage;
     [SerializeField] TextMeshProUGUI itemQty;
 
     public int Index { get; set; }
+
+    public void ClickSlot()
+    {
+        OnSlotSelected?.Invoke(Index);
+    }
 
     public void UpdateSlot(InventoryItem item)
     {

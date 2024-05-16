@@ -13,18 +13,19 @@ public class Inventory : Singleton<Inventory>
     private void Start()
     {
         inventoryItems = new InventoryItem[inventorySize];
+        CheckSlotForItem();
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
+        if(Input.GetKeyDown(KeyCode.H))
         {
-            AddItem(testItem, 15);
+            AddItem(testItem, 2);
         }
     }
 
-    void AddItem(InventoryItem item, int quantity)
+    public void AddItem(InventoryItem item, int quantity)
     {
-        if (item == null || quantity == 0)
+        if(item == null || quantity <= 0)
             return;
 
         List<int> itemIndexes = CheckItemStock(item.ID);
@@ -35,19 +36,21 @@ public class Inventory : Singleton<Inventory>
             {
                 int currentMaxStack = item.MaxStack;
 
-                if (inventoryItems[index].Quantity < currentMaxStack)
+                if(inventoryItems[index].Quantity < currentMaxStack)
                 {
                     inventoryItems[index].Quantity += quantity;
 
-                    if (inventoryItems[index].Quantity > currentMaxStack)
+                    if(inventoryItems[index].Quantity > currentMaxStack)
                     {
                         int diff = inventoryItems[index].Quantity - currentMaxStack;
                         inventoryItems[index].Quantity = currentMaxStack;
                         AddItem(item, diff);
                     }
+
+                    InventoryUI.i.DrawItem(inventoryItems[index], index);
+                    return;
                 }
 
-                InventoryUI.i.DrawItem(inventoryItems[index], index);
             }
         }
 
@@ -56,24 +59,32 @@ public class Inventory : Singleton<Inventory>
         int remainingAmount = quantity - quantityToAdd;
         if(remainingAmount > 0)
             AddItem(item, remainingAmount);
+    }
+    
+    public void RemoveItem(int index)
+    {
+        if(inventoryItems[index] == null)
+            return;
 
+        inventoryItems[index] = null;
+        InventoryUI.i.DrawItem(null, index);
     }
 
-    List<int>CheckItemStock(string itemID)
+
+    List<int> CheckItemStock(string itemID)
     {
         List<int> itemIndexes = new List<int>();
 
         for(int i = 0; i < inventoryItems.Length; i++)
         {
-            if (inventoryItems[i].ID == null)
+            if(inventoryItems[i] == null)
                 continue;
 
-            if (inventoryItems[i].ID == itemID)
+            if(inventoryItems[i].ID == itemID)
             {
                 itemIndexes.Add(i);
             }
         }
-
         return itemIndexes;
     }
 
@@ -81,12 +92,21 @@ public class Inventory : Singleton<Inventory>
     {
         for(int i = 0; i < inventorySize; i++)
         {
-            if (inventoryItems[i] != null)
+            if(inventoryItems[i] != null)
                 continue;
 
             inventoryItems[i] = item.CreateItem();
             inventoryItems[i].Quantity = quantity;
         }
-
     }
+
+    void CheckSlotForItem()
+    {
+        for(int i = 0; i < inventorySize; i++)
+        {
+            if(inventoryItems[i] == null)
+                InventoryUI.i.DrawItem(null, i);
+        }
+    }
+
 }

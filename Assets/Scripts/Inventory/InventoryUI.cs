@@ -7,11 +7,17 @@ public class InventoryUI : Singleton<InventoryUI>
 {
     [SerializeField] InventorySlot slotPrefab;
     [SerializeField] Transform container;
-    List<InventorySlot> slotList;
+    
+    List<InventorySlot> slotList = new List<InventorySlot>();
+
+    public InventorySlot CurrentSlot { get; set; }
+    
 
     private void Start()
     {
-        InitInventory();
+       InitInventory();
+        InventorySlot.OnSlotSelected += SlotSelected;
+
     }
 
     void InitInventory()
@@ -24,9 +30,29 @@ public class InventoryUI : Singleton<InventoryUI>
         }
     }
 
+    void SlotSelected(int index)
+    {
+        CurrentSlot = slotList[index];
+    }
+
+    public void RemoveItem()
+    {
+        if(CurrentSlot == null)
+            return;
+
+        Inventory.i.RemoveItem(CurrentSlot.Index);
+    }
+
+
     public void DrawItem(InventoryItem item, int index)
     {
         InventorySlot slot = slotList[index];
+        if(item == null)
+        {
+            slot.ShowSlotInformation(false);
+            return;
+        }
+
         slot.ShowSlotInformation(true);
         slot.UpdateSlot(item);
     }
