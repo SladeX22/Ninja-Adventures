@@ -32,7 +32,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
-        EquipWeapon(initialWeapon);
+        /*EquipWeapon(initialWeapon);*/
+        WeaponManager.i.EquipWeapon(initialWeapon);
         actions.Attack.ClickAttack.performed += ctx => Attack();
         SelectionManager.OnEnemySelected += SetCurrentTarget;
         SelectionManager.OnNoSelection += ResetCurrentTarget;
@@ -44,7 +45,7 @@ public class PlayerAttack : MonoBehaviour
         GetFirePosition();
     }
 
-    void EquipWeapon(Weapon newWeapon)
+    public void EquipWeapon(Weapon newWeapon)
     {
         CurrentWeapon = newWeapon;
         playerStats.TotalDamage = playerStats.BaseDamage + CurrentWeapon.Damage;

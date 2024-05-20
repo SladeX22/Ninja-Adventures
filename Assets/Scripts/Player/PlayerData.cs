@@ -14,6 +14,7 @@ public class PlayerData : MonoBehaviour
     public PlayerStats PlayerStats => playerStats;
     //public PlayerHealth PlayerHealth=> playerHealth;
 
+
     public PlayerHealth PlayerHealth
     {
         get { return playerHealth; }
@@ -24,11 +25,15 @@ public class PlayerData : MonoBehaviour
         get { return playerMana; }
     }
 
+    PlayerAttack playerAttack;
+    public PlayerAttack PlayerAttack => playerAttack;
+
     private void Awake()
     {
         playerAnimation = GetComponent<PlayerAnimation>();
         playerMana = GetComponent<PlayerMana>();
         playerHealth = GetComponent<PlayerHealth>();
+        playerAttack = GetComponent<PlayerAttack>();
     }
 
 

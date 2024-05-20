@@ -56,6 +56,11 @@ public class UIManager : MonoBehaviour
     public void ToggleInventoryPanel()
     {
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        if(inventoryPanel.activeSelf == false)
+        {
+            InventoryUI.i.descriptionPanel.SetActive(false);
+            InventoryUI.i.CurrentSlot = null;
+        }
     }
 
     public void ToggleStatsPanel()

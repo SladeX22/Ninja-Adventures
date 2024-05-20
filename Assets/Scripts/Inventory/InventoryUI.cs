@@ -10,6 +10,12 @@ public class InventoryUI : Singleton<InventoryUI>
     [SerializeField] InventorySlot slotPrefab;
     [SerializeField] Transform container;
     
+    public GameObject descriptionPanel;
+    [SerializeField] Image itemIcon;
+    [SerializeField] TextMeshProUGUI itemName;
+    [SerializeField] TextMeshProUGUI itemDescription;
+
+
     List<InventorySlot> slotList = new List<InventorySlot>();
 
     public InventorySlot CurrentSlot { get; set; }
@@ -31,9 +37,29 @@ public class InventoryUI : Singleton<InventoryUI>
         }
     }
 
+    public void ShowItemDescription(int index)
+    {
+        if(Inventory.i.InventoryItems[index] == null)
+            return;
+
+        descriptionPanel.SetActive(true);
+        itemIcon.sprite = Inventory.i.InventoryItems[index].Icon;
+        itemName.text = Inventory.i.InventoryItems[index].Name;
+        itemDescription.text = Inventory.i.InventoryItems[index].Description;
+    }
+
     void SlotSelected(int index)
     {
         CurrentSlot = slotList[index];
+        ShowItemDescription(index);
+    }
+
+    public void EquipItem()
+    {
+        if(CurrentSlot == null)
+            return;
+
+        Inventory.i.EquipItem(CurrentSlot.Index);
     }
 
     public void UseItem()

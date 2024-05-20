@@ -9,6 +9,7 @@ public class Inventory : Singleton<Inventory>
     public InventoryItem testItem;
 
     public int InventorySize => inventorySize;
+    public InventoryItem[] InventoryItems => inventoryItems;
 
     private void Start()
     {
@@ -21,6 +22,17 @@ public class Inventory : Singleton<Inventory>
         {
             AddItem(testItem, 2);
         }
+    }
+
+    public void EquipItem(int index)
+    {
+        if(inventoryItems[index] == null)
+            return;
+        if(inventoryItems[index].Type != ItemType.WEAPON)
+            return;
+
+        inventoryItems[index].EquipItem();
+        
     }
 
     public void UseItem(int index)
@@ -89,6 +101,9 @@ public class Inventory : Singleton<Inventory>
         if(inventoryItems[index] == null)
             return;
 
+
+        InventoryUI.i.descriptionPanel.SetActive(false);
+        InventoryUI.i.CurrentSlot = null;
         inventoryItems[index] = null;
         InventoryUI.i.DrawItem(null, index);
     }
