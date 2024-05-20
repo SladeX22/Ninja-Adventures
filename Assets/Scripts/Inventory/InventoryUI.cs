@@ -15,7 +15,6 @@ public class InventoryUI : Singleton<InventoryUI>
     [SerializeField] TextMeshProUGUI itemName;
     [SerializeField] TextMeshProUGUI itemDescription;
 
-
     List<InventorySlot> slotList = new List<InventorySlot>();
 
     public InventorySlot CurrentSlot { get; set; }
@@ -64,7 +63,8 @@ public class InventoryUI : Singleton<InventoryUI>
 
     public void UseItem()
     {
-        Inventory.i.UseItem(CurrentSlot.Index);
+        if(CurrentSlot != null)
+            Inventory.i.UseItem(CurrentSlot.Index);
     }
 
     public void RemoveItem()
