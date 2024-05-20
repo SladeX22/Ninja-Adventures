@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: weew
+  m_Name: TilesetWallSimple_84
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 365701380, guid: 081df93681777604d8cc1fbb041aef34, type: 3}
+  m_Sprite: {fileID: -1251154296, guid: ba3408e485d058e4b9dd29c246f2a5f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
