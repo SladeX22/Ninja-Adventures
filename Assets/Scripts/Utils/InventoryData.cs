@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryData : MonoBehaviour
+[System.Serializable]
+public class InventoryData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string[] ItemContent;
+    public int[] ItemQuantity;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
 }
