@@ -19,8 +19,9 @@ public class Inventory : Singleton<Inventory>
     private void Start()
     {
         inventoryItems = new InventoryItem[inventorySize];
-        //CheckSlotForItem();
+        CheckSlotForItem();
         LoadInventory();
+        //SaveGame.Delete(INVENTORY_KEY_DATA);
     }
     private void Update()
     {

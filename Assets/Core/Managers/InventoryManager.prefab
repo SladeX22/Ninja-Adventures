@@ -47,7 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventorySize: 24
   inventoryItems: []
-  testItem: {fileID: 11400000, guid: c98f6b56a8167e344a0a9a5be0aa3f45, type: 2}
+  testItem: {fileID: 11400000, guid: e161e97d1b1eb3f4293c36bdf8017562, type: 2}
+  gameContent: {fileID: 11400000, guid: 39335bd4a26b1e14ebe21ecb7637ee92, type: 2}
 --- !u!114 &1557166200061672851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,4 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotPrefab: {fileID: 5360472859170915628, guid: 4b9a6608cef51cd4c87996c0427efc31, type: 3}
   container: {fileID: 0}
-  inventoryPanel: {fileID: 0}
+  descriptionPanel: {fileID: 0}
+  itemIcon: {fileID: 0}
+  itemName: {fileID: 0}
+  itemDescription: {fileID: 0}
