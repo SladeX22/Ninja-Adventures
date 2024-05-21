@@ -20,6 +20,7 @@ public class Inventory : Singleton<Inventory>
     {
         inventoryItems = new InventoryItem[inventorySize];
         //CheckSlotForItem();
+        LoadInventory();
     }
     private void Update()
     {
@@ -198,5 +199,33 @@ public class Inventory : Singleton<Inventory>
         return null;
     }
 
+    void LoadInventory()
+    {
+        if(SaveGame.Exists(INVENTORY_KEY_DATA))
+        {
+            InventoryData loadData = SaveGame.Load<InventoryData>(INVENTORY_KEY_DATA);
+
+            for(int i = 0; i < inventorySize; i++)
+            {
+                if(loadData.ItemContent[i] != null)
+                {
+                    InventoryItem itemFromContent = ItemInGameContent(loadData.ItemContent[i]);
+
+                    if(itemFromContent != null)
+                    {
+                        inventoryItems[i] = itemFromContent.CreateItem();
+                        inventoryItems[i].Quantity = loadData.ItemQuantity[i];
+                        InventoryUI.i.DrawItem(inventoryItems[i], i);
+                    }
+                }
+                else
+                {
+                    inventoryItems[i] = null;
+                }
+            }
+        }
+
+
+    }
 
 }
