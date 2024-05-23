@@ -82,8 +82,6 @@ public class InventoryUI : Singleton<InventoryUI>
 
     public void DrawItem(InventoryItem item, int index)
     {
-        print(slotList.Count);
-        print("Index: " + index);
         InventorySlot slot = slotList[index];
 
         if(item == null)

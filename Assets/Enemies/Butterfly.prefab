@@ -351,6 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xPDropped: 5
+  lootTable: []
 --- !u!114 &2729724058833630444
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -401,7 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPDropped: 100
+  xPDropped: 200
+  lootTable: []
 --- !u!114 &-7618120820313385886
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -401,7 +401,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPDropped: 3
+  xPDropped: 30
+  lootTable:
+  - Name: Leaf
+    Item: {fileID: 11400000, guid: cc2a3035d1765c246b26852557d276d9, type: 2}
+    Quantity: 3
+    DropChance: 60
+  - Name: Large Seed
+    Item: {fileID: 11400000, guid: 12504cca0ea81a54b9d18e632faef508, type: 2}
+    Quantity: 1
+    DropChance: 15
+  - Name: Large White Seed
+    Item: {fileID: 11400000, guid: 12504cca0ea81a54b9d18e632faef508, type: 2}
+    Quantity: 1
+    DropChance: 5
+  - Name: Stick
+    Item: {fileID: 11400000, guid: 612a485562307164792cd9fa81b56df7, type: 2}
+    Quantity: 1
+    DropChance: 1
 --- !u!114 &7679182282314460161
 MonoBehaviour:
   m_ObjectHideFlags: 0

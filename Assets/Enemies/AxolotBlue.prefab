@@ -416,7 +416,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPDropped: 5
+  xPDropped: 20
+  lootTable:
+  - Name: Fish
+    Item: {fileID: 11400000, guid: 67e8563615704a743a3e398e002deb6f, type: 2}
+    Quantity: 1
+    DropChance: 40
+  - Name: Shrimp
+    Item: {fileID: 11400000, guid: 07be255514c39384ea33945ef5c8309e, type: 2}
+    Quantity: 1
+    DropChance: 20
+  - Name: Calamari
+    Item: {fileID: 11400000, guid: c98f6b56a8167e344a0a9a5be0aa3f45, type: 2}
+    Quantity: 1
+    DropChance: 10
+  - Name: Sushi
+    Item: {fileID: 11400000, guid: 274ccf7d80bb6f74997bd22a78a459f6, type: 2}
+    Quantity: 1
+    DropChance: 5
 --- !u!114 &-7006274596389970477
 MonoBehaviour:
   m_ObjectHideFlags: 0

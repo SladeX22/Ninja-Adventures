@@ -350,7 +350,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e216972dba216504a8d3f0345f6e71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPDropped: 5
+  xPDropped: 15
+  lootTable:
+  - Name: Health Potion
+    Item: {fileID: 11400000, guid: e161e97d1b1eb3f4293c36bdf8017562, type: 2}
+    Quantity: 1
+    DropChance: 90
+  - Name: Mana Potion
+    Item: {fileID: 11400000, guid: e31bfdf5ebfdce948903ffecaa87da3e, type: 2}
+    Quantity: 1
+    DropChance: 50
 --- !u!114 &4649971407017178242
 MonoBehaviour:
   m_ObjectHideFlags: 0
