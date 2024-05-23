@@ -19,10 +19,14 @@ public class InventoryUI : Singleton<InventoryUI>
 
     public InventorySlot CurrentSlot { get; set; }
 
+    public override void Awake()
+    {
+        base.Awake();
+        InitInventory();
+    }
 
     private void Start()
     {
-        InitInventory();
         InventorySlot.OnSlotSelected += SlotSelected;
     }
 
