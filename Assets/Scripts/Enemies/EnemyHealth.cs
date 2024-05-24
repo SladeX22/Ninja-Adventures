@@ -41,7 +41,6 @@ public class EnemyHealth : MonoBehaviour, IDamagable
         anim.SetTrigger("gotKilled");
         GetComponent<EnemyBrain>().enabled = false;
         GetComponent<EnemySelector>().DeactivateSelector();
-        gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
         OnEnemyDead?.Invoke();
         GameManager.i.AddPlayerXP(enemyLoot.XPDropped);
     }

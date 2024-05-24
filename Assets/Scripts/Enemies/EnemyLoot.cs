@@ -25,6 +25,17 @@ public class EnemyLoot : MonoBehaviour
                 DroppedItems.Add(item);
         }
     }
+
+    public bool HasItemsLeft()
+    {
+        foreach(DroppedItem item in DroppedItems)
+        {
+            if(!item.PickedItem)
+                return true;
+        }
+
+        return false;
+    }
 }
 
 [System.Serializable]
@@ -34,6 +45,7 @@ public class DroppedItem
     public InventoryItem Item;
     public int Quantity;
     public float DropChance;
+    public bool DisplayedAlready;
 
     public bool PickedItem { get; set; }
 

@@ -27,11 +27,21 @@ public class LootManager : Singleton<LootManager>
 
         foreach(DroppedItem item in enemyLoot.DroppedItems)
         {
-            if(item.PickedItem)
+            if(item.PickedItem || item.DisplayedAlready)
                 continue;
 
             LootButton button = Instantiate(lootButton, container);
             button.SetData(item);
+            item.DisplayedAlready = true;
+        }
+    }
+
+    public void CheckHasItemsLeft(GameObject enemy)
+    {
+        if (!enemy.GetComponent<EnemyLoot>().HasItemsLeft())
+        {
+            ClosePanel();
+            Destroy(enemy);
         }
     }
 

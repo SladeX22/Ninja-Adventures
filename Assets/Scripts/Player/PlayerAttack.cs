@@ -56,9 +56,9 @@ public class PlayerAttack : MonoBehaviour
         var damage = playerStats.BaseDamage;
         damage += CurrentWeapon.Damage;
 
-        var critChance = Random.Range(0, 100);
+        var critChance = Random.Range(0f, 100f);
         if(critChance <= playerStats.CriticalChance)
-            damage += damage * (playerStats.CriticalDamage / 100);
+            damage += damage * (playerStats.CriticalDamage / 100f);
 
         return damage;
     }
