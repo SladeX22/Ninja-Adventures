@@ -9,15 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f64ab88ff26f03409ebe06045d29083, type: 3}
+  m_Script: {fileID: 11500000, guid: f4579fdef0ed59a49954a9ce4c9bbfa0, type: 3}
   m_Name: Item_Calamari
   m_EditorClassIdentifier: 
   ID: ItemCalamari
   Name: Calamari
   Icon: {fileID: 21300000, guid: 987d8d597c638b443ba212fd0ee93011, type: 3}
   Description: Squid meat
-  Type: 3
+  Type: 0
   IsConsumable: 0
   IsStackable: 1
   MaxStack: 25
   Quantity: 0
+  HealthRestored: 8
+  ManaRestored: 0

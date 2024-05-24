@@ -9,15 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f64ab88ff26f03409ebe06045d29083, type: 3}
+  m_Script: {fileID: 11500000, guid: f4579fdef0ed59a49954a9ce4c9bbfa0, type: 3}
   m_Name: Item_Leaf
   m_EditorClassIdentifier: 
   ID: ItemTeaLeaf
   Name: Tea Leaf
   Icon: {fileID: 21300000, guid: be3f1cf93918bcb408544031f3a6c894, type: 3}
-  Description: Tea Leaf
+  Description: Tea leaf
   Type: 3
   IsConsumable: 0
   IsStackable: 1
   MaxStack: 25
   Quantity: 0
+  HealthRestored: 0
+  ManaRestored: 10
