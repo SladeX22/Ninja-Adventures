@@ -21,5 +21,5 @@ MonoBehaviour:
   IsStackable: 1
   MaxStack: 25
   Quantity: 0
-  HealthRestored: 20
-  ManaRestored: 2
+  HealthRestored: 8
+  ManaRestored: 12
