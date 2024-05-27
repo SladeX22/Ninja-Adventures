@@ -404,21 +404,25 @@ MonoBehaviour:
   xPDropped: 30
   lootTable:
   - Name: Leaf
-    Item: {fileID: 11400000, guid: cc2a3035d1765c246b26852557d276d9, type: 2}
+    Item: {fileID: 11400000, guid: 0830c1c25ce445445981997c7169b97c, type: 2}
     Quantity: 3
     DropChance: 60
+    DisplayedAlready: 0
   - Name: Large Seed
-    Item: {fileID: 11400000, guid: 12504cca0ea81a54b9d18e632faef508, type: 2}
+    Item: {fileID: 11400000, guid: 0830c1c25ce445445981997c7169b97c, type: 2}
     Quantity: 1
     DropChance: 15
+    DisplayedAlready: 0
   - Name: Large White Seed
-    Item: {fileID: 11400000, guid: 12504cca0ea81a54b9d18e632faef508, type: 2}
+    Item: {fileID: 11400000, guid: 056c34ac140c906458463def59b0f7f2, type: 2}
     Quantity: 1
     DropChance: 5
+    DisplayedAlready: 0
   - Name: Stick
     Item: {fileID: 11400000, guid: 612a485562307164792cd9fa81b56df7, type: 2}
     Quantity: 1
     DropChance: 1
+    DisplayedAlready: 0
 --- !u!114 &7679182282314460161
 MonoBehaviour:
   m_ObjectHideFlags: 0

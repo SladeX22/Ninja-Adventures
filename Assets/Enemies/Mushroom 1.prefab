@@ -434,7 +434,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xPDropped: 10
-  lootTable: []
+  lootTable:
+  - Name: Plant Scroll
+    Item: {fileID: 11400000, guid: 1ede97b07a5a3ba44a973fd423fef4bb, type: 2}
+    Quantity: 1
+    DropChance: 10
+    DisplayedAlready: 0
+  - Name: Large Seed
+    Item: {fileID: 11400000, guid: 04fdf08d6839d1a4299bfa7c0d492f73, type: 2}
+    Quantity: 1
+    DropChance: 100
+    DisplayedAlready: 0
+  - Name: White Large Seed
+    Item: {fileID: 11400000, guid: 056c34ac140c906458463def59b0f7f2, type: 2}
+    Quantity: 1
+    DropChance: 75
+    DisplayedAlready: 0
 --- !u!114 &6685322541735638855
 MonoBehaviour:
   m_ObjectHideFlags: 0

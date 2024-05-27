@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4579fdef0ed59a49954a9ce4c9bbfa0, type: 3}
   m_Name: Item_Beaf
   m_EditorClassIdentifier: 
-  ID: ItemBeaf
-  Name: Beaf
+  ID: ItemMeat
+  Name: Meat
   Icon: {fileID: 21300000, guid: 4f90205e269a947448b74bdd6d390a73, type: 3}
-  Description: Cow meat
+  Description: Animal meat
   Type: 3
   IsConsumable: 0
   IsStackable: 1

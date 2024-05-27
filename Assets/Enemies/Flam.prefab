@@ -311,8 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63913a03573ecf46b53fe7cbaa358aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 2.15
-  stoppingDistance: 1
+  chaseSpeed: 2.1
+  stoppingDistance: 1.65
 --- !u!114 &-2818566501341591583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,8 +325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd663b4330aca5b47974fa44fd2c8a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
-  timeBetweenAtacks: 1.8
+  damage: 6
+  timeBetweenAtacks: 1.2
 --- !u!114 &7964577654937576103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +353,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xPDropped: 40
-  lootTable: []
+  lootTable:
+  - Name: Fire Scroll
+    Item: {fileID: 11400000, guid: 770c383ee1840e042a3fcfca3ca9c34a, type: 2}
+    Quantity: 1
+    DropChance: 10
+    DisplayedAlready: 0
+  - Name: Book
+    Item: {fileID: 11400000, guid: 371ca37e8a0657646827d1731de2b13e, type: 2}
+    Quantity: 1
+    DropChance: 20
+    DisplayedAlready: 0
 --- !u!114 &2665764503521120154
 MonoBehaviour:
   m_ObjectHideFlags: 0
