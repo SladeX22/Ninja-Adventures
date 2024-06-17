@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField] float landingX;
-    [SerializeField] float landingY;
-    private Vector2 landingPosition;
-
-    private void Awake()
-    {
-        landingPosition = new Vector2(landingX, landingY);
-    }
+    [SerializeField] GameObject landing;
+    [SerializeField] bool exit;
 
     private void OnCollisionEnter2D(Collision2D pl)
     {
         if(pl.gameObject.name != "Player")
             return;
 
-        pl.gameObject.transform.position = landingPosition;
+        var ltp = landing.transform.position;
+        
+        if(exit)
+            pl.transform.position = new Vector2(ltp.x, ltp.y + 1.25f);
+        else
+            pl.transform.position = new Vector2(ltp.x, ltp.y - 1.25f);
     }
 }

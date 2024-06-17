@@ -38,19 +38,49 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI manaText;
     [SerializeField] TextMeshProUGUI xpText;
 
+    [Header("Quest Panel")]
+    [SerializeField] GameObject npcQuestPanel;
+    [SerializeField] GameObject playerQuestPanel;
+
+
+
     private void Start()
     {
         PlayerUpgrade.OnPlayerUpgrade += PlayerUpgraded;
-    }
-
-    void PlayerUpgraded()
-    {
-        UpdateStatsPanel();
+        DialogManager.OnExtraInteraction += HandleExtraInteraction;
     }
 
     private void Update()
     {
         UpdatePlayerUI();
+    }
+
+    void HandleExtraInteraction(InteractionType type)
+    {
+        switch (type)
+        {
+            case InteractionType.Quest:
+                ToggleNPCQuestPanel(true);
+                break;
+
+            case InteractionType.Shop:
+                break;
+
+        }
+    }
+
+    public void ToggleNPCQuestPanel(bool value)
+    {
+        npcQuestPanel.SetActive(value);
+    }
+    public void TogglePlayerQuestPanel()
+    {
+        playerQuestPanel.SetActive(!playerQuestPanel.activeSelf);
+    }
+
+    void PlayerUpgraded()
+    {
+        UpdateStatsPanel();
     }
 
     public void ToggleInventoryPanel()

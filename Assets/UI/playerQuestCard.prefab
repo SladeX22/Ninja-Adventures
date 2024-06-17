@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 5721213501114771845}
   - component: {fileID: 3923664263259808702}
   - component: {fileID: 310763153759149375}
+  - component: {fileID: 6294209826479164771}
   m_Layer: 5
   m_Name: playerQuestCard
   m_TagString: Untagged
@@ -295,7 +296,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060952198092891191}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -351,6 +352,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 16
+--- !u!114 &6294209826479164771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060952198092891191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe40580ac72026e458f3ab261b3a7c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: {fileID: 8414742211314729846}
+  questDescription: {fileID: 3082088601611731535}
+  status: {fileID: 612767244827446934}
+  goldReward: {fileID: 7352003041631704598}
+  xpReward: {fileID: 9178579367305492103}
+  itemQty: {fileID: 7070082170495445540}
+  itemIcon: {fileID: 456081022208277338}
+  rewardPanel: {fileID: 4049176146439440414}
+  claimButton: {fileID: 6999856949355076762}
 --- !u!1 &1096605145487911860
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,8 +834,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5672754908166999560}
   - {fileID: 6740650041281255630}
+  - {fileID: 5672754908166999560}
   m_Father: {fileID: 9108845542079554663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1480,7 +1502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &944024250487715712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1582,7 +1604,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 170892731755234676}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6294209826479164771}
+        m_TargetAssemblyTypeName: QuestCardPlayer, Assembly-CSharp
+        m_MethodName: ClaimQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9025199633118709633
 GameObject:
   m_ObjectHideFlags: 0
